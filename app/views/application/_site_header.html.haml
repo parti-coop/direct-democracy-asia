@@ -1,0 +1,8 @@
+#site-header
+  = link_to t('add politician'), new_person_path
+  - if user_signed_in?
+    = link_to t('sign out'), destroy_user_session_path, method: :delete
+    = link_to current_user.email, ''
+  - else
+    = link_to t('sign up'), new_user_registration_path
+    = link_to t('sign in'), new_user_session_path

@@ -1,0 +1,15 @@
+= form_for @person do |f|
+  .form-group
+    = f.label :name
+    = f.text_field :name
+  .form-group
+    = f.label :url
+    = f.text_field :url
+  .form-group
+    = f.label :career
+    = f.text_area :career
+  .form-group
+    = f.label :image
+    = f.file_field :image
+  .form-group
+    = f.submit

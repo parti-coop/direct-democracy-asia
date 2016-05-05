@@ -1,0 +1,11 @@
+%h2= @person.name
+
+- if @person.image.file.present?
+  = image_tag @person.image_url(:md)
+
+%p= @person.url
+
+%div= simple_format @person.career
+
+= link_to t('edit'), edit_person_path(@person)
+= link_to t('destroy'), @person, method: :delete, data: { confirm: 'are you sure?' }

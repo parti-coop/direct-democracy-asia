@@ -5,6 +5,12 @@ gem 'rails', '4.2.6'
 #db
 gem 'sqlite3'
 
+# model
+
+# file upload
+gem 'carrierwave', '~> 0.10.0'
+gem "mini_magick"
+
 # auth
 gem 'devise'
 
